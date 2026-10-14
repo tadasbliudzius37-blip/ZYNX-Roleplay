@@ -1,1 +1,182 @@
 
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZYNX Roleplay | Taisyklės</title>
+<style>
+:root {
+  --bg: #070b13;
+  --panel: #101827;
+  --blue: #2785ff;
+  --text: #f2f6ff;
+  --muted: #aab8cc;
+  --border: #263b58;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+header {
+  background: #0b1220;
+  border-bottom: 1px solid var(--border);
+  padding: 24px 16px;
+  text-align: center;
+}
+.logo { color: var(--blue); font-size: 30px; font-weight: 900; letter-spacing: 4px; }
+header p { color: var(--muted); margin-bottom: 0; }
+nav {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; justify-content: center; gap: 18px;
+  padding: 12px; background: #0a101c;
+  border-bottom: 1px solid var(--border);
+}
+nav a { color: white; text-decoration: none; font-weight: bold; }
+nav a:hover { color: var(--blue); }
+main { width: min(900px, 92%); margin: 28px auto; }
+.hero {
+  padding: 26px; text-align: center;
+  background: linear-gradient(135deg, #111d31, #0b1220);
+  border: 1px solid var(--border); border-radius: 18px;
+}
+.hero h1 { margin: 0; font-size: clamp(28px, 6vw, 44px); }
+.hero span { color: var(--blue); }
+.hero p { color: var(--muted); }
+.search { width: 100%; padding: 15px; margin: 22px 0;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 10px; color: white; font-size: 16px; }
+h2 { margin-top: 32px; }
+.rule {
+  margin: 12px 0; border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden; background: var(--panel);
+}
+.rule summary {
+  padding: 16px; cursor: pointer; font-weight: bold;
+  background: #111c2d;
+}
+.rule summary::marker { color: var(--blue); }
+.rule p, .rule ul { padding: 0 18px; color: #d6e0ef; }
+.rule p { padding-bottom: 8px; }
+.rule li { margin: 8px 0; }
+.note { color: var(--muted); font-size: 14px; }
+footer {
+  margin-top: 40px; padding: 24px 12px; text-align: center;
+  color: var(--muted); border-top: 1px solid var(--border);
+}
+footer strong { color: var(--blue); }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">ZYNX RP</div>
+  <p>FiveM Roleplay • Taisyklės ir informacija</p>
+</header>
+<nav>
+  <a href="#taisykles">Taisyklės</a>
+  <a href="#rp">RP sąvokos</a>
+  <a href="#darbai">Darbai</a>
+</nav>
+<main>
+  <section class="hero">
+    <h1>Sveiki atvykę į <span>ZYNX Roleplay</span></h1>
+    <p>Perskaityk taisykles prieš prisijungdamas prie serverio.</p>
+  </section>
+
+  <input id="search" class="search" type="search"
+    placeholder="🔎 Ieškoti taisyklių..." aria-label="Ieškoti taisyklių">
+
+  <section id="taisykles">
+    <h2>📘 Bendrosios taisyklės</h2>
+    <p class="note">Pavyzdinės taisyklės. Prieš paleidžiant serverį pakeisk jas savo oficialiomis taisyklėmis.</p>
+
+    <details class="rule">
+      <summary>1. Pagarba žaidėjams</summary>
+      <p>Gerbk kitus žaidėjus ir administraciją. Draudžiami įžeidinėjimai, priekabiavimas ir tyčinis kitų trikdymas.</p>
+    </details>
+    <details class="rule">
+      <summary>2. Roleplay kokybė</summary>
+      <p>Žaisk savo personažą nuosekliai ir venk veiksmų, kurie griauna kitų žaidėjų RP situacijas.</p>
+    </details>
+    <details class="rule">
+      <summary>3. RDM ir VDM</summary>
+      <p>Draudžiama be tinkamos RP priežasties pulti kitus žaidėjus ar tyčia naudoti transporto priemonę jiems žaloti.</p>
+    </details>
+    <details class="rule">
+      <summary>4. Metagaming</summary>
+      <p>Nenaudok informacijos, gautos ne žaidime, savo personažo veiksmams pagrįsti.</p>
+    </details>
+    <details class="rule">
+      <summary>5. Powergaming</summary>
+      <p>Neprimetinėk kitiems žaidėjams veiksmų ir nesinaudok nerealiais savo personažo gebėjimais.</p>
+    </details>
+    <details class="rule">
+      <summary>6. Bugų naudojimas</summary>
+      <p>Nesinaudok žaidimo klaidomis siekdamas pranašumo. Apie jas pranešk administracijai.</p>
+    </details>
+    <details class="rule">
+      <summary>7. Administracijos nurodymai</summary>
+      <p>Su administracija bendrauk pagarbiai. Jei nesutinki su sprendimu, naudok nustatytą skundų tvarką.</p>
+    </details>
+  </section>
+
+  <section id="rp">
+    <h2>🎭 RP sąvokos</h2>
+    <details class="rule">
+      <summary>Metagaming (MG)</summary>
+      <p>Informacijos iš ne žaidimo aplinkos panaudojimas žaidime.</p>
+    </details>
+    <details class="rule">
+      <summary>Powergaming (PG)</summary>
+      <p>Nerealių veiksmų atlikimas arba veiksmų primetimas kitam žaidėjui.</p>
+    </details>
+    <details class="rule">
+      <summary>FearRP</summary>
+      <p>Personažas turi realistiškai vertinti pavojingas situacijas.</p>
+    </details>
+    <details class="rule">
+      <summary>FailRP</summary>
+      <p>Veiksmai, kurie neatitinka realistiško roleplay principų.</p>
+    </details>
+  </section>
+
+  <section id="darbai">
+    <h2>👮 Darbų taisyklės</h2>
+    <details class="rule">
+      <summary>Bendros darbo taisyklės</summary>
+      <ul>
+        <li>Laikykis savo darbo vidaus taisyklių ir vadovybės nurodymų.</li>
+        <li>Naudok tarnybinę įrangą tik pagal paskirtį.</li>
+        <li>Gerbk kolegas ir kitus žaidėjus.</li>
+        <li>Nepiktnaudžiauk darbo teisėmis ar tarnybiniu transportu.</li>
+      </ul>
+    </details>
+    <details class="rule">
+      <summary>Žiemos taisyklės</summary>
+      <p>Jei serveryje vyksta žiemos renginys, laikykis renginio paskelbtų sąlygų ir administracijos nurodymų.</p>
+    </details>
+  </section>
+</main>
+<footer>
+  <strong>ZYNX Roleplay</strong><br>
+  FiveM Roleplay serveris<br>
+  <span class="note">Taisyklės gali būti atnaujinamos. Sek oficialius serverio pranešimus.</span>
+</footer>
+<script>
+const search = document.getElementById('search');
+const rules = [...document.querySelectorAll('.rule')];
+search.addEventListener('input', () => {
+  const query = search.value.toLocaleLowerCase('lt').trim();
+  rules.forEach(rule => {
+    rule.hidden = !rule.innerText.toLocaleLowerCase('lt').includes(query);
+    if (query && !rule.hidden) rule.open = true;
+    if (!query) rule.open = false;
+  });
+});
+</script>
+</body>
+</html>
